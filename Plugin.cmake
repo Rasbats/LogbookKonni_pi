@@ -13,17 +13,17 @@
 # -------- Options ----------
 
 set(OCPN_TEST_REPO
-    "opencpn/logbookkonni-alpha"
+    "mike-rossiter/logbookkonni-alpha"
     CACHE STRING "Default repository for untagged builds"
 )
 set(OCPN_BETA_REPO
-    "opencpn/logbookkonni-beta"
-    CACHE STRING 
+    "mike-rossiter/logbookkonni-beta"
+    CACHE STRING
     "Default repository for tagged builds matching 'beta'"
 )
 set(OCPN_RELEASE_REPO
-    "opencpn/logbookkonni-prod"
-    CACHE STRING 
+    "mike-rossiter/logbookkonni-prod"
+    CACHE STRING
     "Default repository for tagged builds not matching 'beta'"
 )
 
@@ -103,8 +103,8 @@ macro(add_plugin_libraries)
   # Added by Shipdriver
   add_subdirectory("libs/jsoncpp")
   target_link_libraries(${PACKAGE_NAME} ocpn::jsoncpp)
-  
-  # Needed for Logbook  
+
+  # Needed for Logbook
   add_subdirectory("libs/nmea0183")
   target_link_libraries(${PACKAGE_NAME} ocpn::nmea0183
 
