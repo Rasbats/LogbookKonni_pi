@@ -43,7 +43,7 @@ set(PLUGIN_API_NAME Logbook) # As of GetCommonName() in plugin API
 set(PKG_SUMMARY "Complex, feature-rich logbook")
 set(PKG_DESCRIPTION [=[ Marine Logbook
 with flexible and customizable layout. Help on YouTube,
-search LogbookKonni
+search LogbookKonni.
 ]=])
 
 set(PKG_AUTHOR "Del Elson")
